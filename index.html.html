@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mother's Day Tribute</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>What would man be without a signifcant female presence in his life!</h1>
+    <p class="subtitle">A celebration of all your wholesome things each of you have done for me and our special memories</p>
+
+    <div class="music-alert">
+      <p>🎵 Having trouble hearing the music? Click the speaker button below to play or unmute!</p>
+    </div>
+
+    <audio controls>
+      <source src="soh-soh.mp3.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="carousel">
+      <div class="card">
+        <img id="slider" src="family.jpg.jpg" alt="Image Slider">
+  <br>
+  <h2 id="image-text">WORDS CAN'T DESRCIBE HOW YOU ALL MEAN A LOT TO ME</h2>
+  <button onclick="nextImage()">Next Image</button>
+
+  <script>
+    const images = [
+     "family.jpg.jpg",
+     "rebecca.jpg.jpg",
+     "frieda.jpg.jpg",
+     "josephine.jpg.jpg",
+     "ari and rebecca.jpg.jpg",
+     "florence.jpg.jpg",
+     "araba.jpg.jpg",
+     "us in america.jpg.jpg",
+     "my two mums and ari.jpg.jpg",
+     "model.jpg.jpg",
+     "gradnma meeting bawuma.jpg.jpg",
+     "boss lady.jpg.jpg",
+     "fav pic.jpg.jpg",
+    ];
+
+    const texts = [
+        "WORDS CAN'T DESCRIBE HOW YOU ALL MEAN A LOT TO ME",
+        "My one and only mumzy! God surely has more in store for you.",
+        "Second mumzy, Ariella should know that I was there before her... haha.",
+        "Aunt Josephine, thank you for the childhood memories.",
+        "Ari's fashion sense is unmatched.",
+        "She hates to she me home cause she knows she'll have to prepare stews for me.",
+        "Model bi o, kaish somebody put her on the runway and let's get money.",
+        "Btw that's not me.",
+        "no caption needed.",
+        "Get an agency already mernnn",
+        "Granny no be small woman o... yeah that's what she said the grandchildren should call her, ha.",
+        "Boss lady of the house.",
+        "Fav pic of the year."
+    ];
+
+    let currentIndex = 0;
+
+    function nextImage() 
+    {
+      currentIndex = (currentIndex + 1) % images.length;
+      document.getElementById("slider").src = images[currentIndex];
+      document.getElementById("image-text").innerText = texts[currentIndex];
+    }
+  </script>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <p><strong>Happy Mother's Day!</strong><br>Made with love for the most amazing women in the world</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body> 
+</html>

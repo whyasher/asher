@@ -1,0 +1,60 @@
+body {
+    background-image:url(BACKGROUND.jpg.avif); /* Fixed missing quotes around the URL */
+    font-family: Arial, sans-serif; /* Fixed missing comma between font names */
+    background-color: hsl(0, 0%, 0%);
+    text-align: center; /* Fixed syntax: changed "text align" to "text-align" */
+    color: hsl(0, 0%, 100%);
+    padding: 20px;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.1em;
+    color: hsl(0, 0%, 100%);
+}
+
+.music-alert {
+    color: #17dae4;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.speaker-btn {
+    display: block; /* Center the button */
+    margin: 20px auto; /* Center horizontally and add vertical spacing */
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel .card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 200px;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #e481bc;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+
+
