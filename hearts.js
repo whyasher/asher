@@ -4,7 +4,7 @@ for (let i = 0; i < 50; i++){
     heart.classList.add('falling-heart1');
     heart.innerHTML = '&#128151';
       heart.style.left= Math.random() * 100 + 'vw';
-    heart.style.animationDuration = (Math.random() * 3 + 10) + 's';
+    heart.style.animationDuration = (Math.random() * 3 + 5) + 's';
     heart.style.fontsize = (Math.random() * 20 + 12) + 'px';
 
     container.appendChild(heart);
@@ -18,7 +18,7 @@ for (let i = 0; i < 50; i++){
   
 
     heart.style.left= Math.random() * 100 + 'vw';
-    heart.style.animationDuration = (Math.random() * 3 + 5) + 's';
+    heart.style.animationDuration = (Math.random() * 3 + 10) + 's';
     heart.style.fontsize = (Math.random() * 20 + 12) + 'px';
 
     container.appendChild(heart);
@@ -37,3 +37,4 @@ for (let i = 0; i < 50; i++){
 
     container.appendChild(heart);
 }
+
